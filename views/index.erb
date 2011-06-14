@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Faye demo</title>
+    <script type="text/javascript" src="/faye.js"></script>
+    <script type="text/javascript" src="/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="/app.js"></script>
+  </head>
+  <body>
+    
+    <h1>Faye cookie authentication</h1>
+    
+    <p>Status: <%= session[:authenticated] ? 'Logged IN' : 'Logged OUT' %></p>
+    
+    <form method="post" action="/login">
+      <input type="submit" value="Log in">
+    </form>
+    
+    <form method="post" action="/logout">
+      <input type="submit" value="Log out">
+    </form>
+    
+  </body>
+</html>
+
